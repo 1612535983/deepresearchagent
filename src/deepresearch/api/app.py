@@ -18,8 +18,8 @@ from deepresearch.api.schemas import (
     RunDetailResponse,
     SkillResponse,
 )
+from deepresearch.api.skills import resolve_web_skill_config
 from deepresearch.skill.bootstrap import get_skill_manager
-from deepresearch.skill.config import SkillConfig
 from deepresearch.skill.types import SkillRecord
 
 
@@ -192,7 +192,7 @@ def _manager(request: Request) -> RunManager:
 
 
 def _default_skill_catalog() -> Sequence[SkillRecord]:
-    manager = get_skill_manager(SkillConfig.from_env())
+    manager = get_skill_manager(resolve_web_skill_config())
     return manager.list_skills() if manager is not None else []
 
 

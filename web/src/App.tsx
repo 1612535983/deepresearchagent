@@ -141,8 +141,19 @@ function App() {
             </p>
             <div className="skill-list">
               {loadingSkills && <span className="muted">正在读取 Skill…</span>}
+              {!loadingSkills && skills.length > 0 && (
+                <button
+                  type="button"
+                  className={`skill-chip${selectedSkills.length === 0 ? " selected" : ""}`}
+                  aria-pressed={selectedSkills.length === 0}
+                  onClick={() => setSelectedSkills([])}
+                >
+                  <span>自动匹配</span>
+                  <small>AUTO</small>
+                </button>
+              )}
               {!loadingSkills && skills.length === 0 && (
-                <span className="muted">Skill 系统未启用，将使用默认研究流程。</span>
+                <span className="muted">没有发现可用的 Skill 文件。</span>
               )}
               {skills.map((skill) => {
                 const selected = selectedSkills.includes(skill.name);

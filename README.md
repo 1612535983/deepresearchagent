@@ -86,7 +86,7 @@ uv run deepresearch demo
 uv run pytest -q
 ```
 
-当前项目包含 **330 个自动化测试**，覆盖 Agent、Tool、Middleware、Checkpoint、上下文治理、Memory、Skill、报告评估、受控 Skill 演化和 Web API。
+当前项目包含 **332 个自动化测试**，覆盖 Agent、Tool、Middleware、Checkpoint、上下文治理、Memory、Skill、报告评估、受控 Skill 演化和 Web API。
 
 ### 接入真实模型
 
@@ -374,6 +374,8 @@ uv run deepresearch run "核验这项声明并给出来源" --skill source-verif
 ```
 
 项目自带 `web-research`、`source-verification` 和 `evidence-report-writing` 三个 Skill。Skill 使用不可变版本和内容哈希，保证旧任务恢复时仍能读取当时使用的版本。
+
+CLI 是否启用 Skill 仍由 `DEEPRESEARCH_SKILL_USE` 控制。Web 工作台始终加载可用 Skill：不选择具体 Skill 时自动匹配，选择一个或多个 Skill 时会把名称作为强制选择传给后端，因此不需要先修改 `.env` 中的 Skill 总开关。
 
 ### Skill 运行评估与受控演化
 

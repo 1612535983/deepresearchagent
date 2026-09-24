@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import asyncio
 from collections.abc import AsyncIterator, Awaitable, Callable
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import UTC, datetime
 
 from deepresearch.agent import ResearchResult, astream_question
@@ -16,6 +16,7 @@ from deepresearch.api.schemas import (
     RunStatus,
     run_detail_from_state,
 )
+from deepresearch.api.skills import resolve_web_skill_config
 from deepresearch.agent import stream_resume_question
 from deepresearch.checkpointing import (
     aget_checkpoint_state,
@@ -24,6 +25,7 @@ from deepresearch.checkpointing import (
     open_async_sqlite_checkpointer,
 )
 from deepresearch.events import ResearchEvent
+from deepresearch.config import Settings
 from deepresearch.state import ResearchState
 
 
@@ -43,9 +45,15 @@ async def default_run_executor(
 ) -> ResearchResult:
     """Adapt the application runner to the Web task-manager contract."""
 
+    settings = Settings.from_env()
+    settings = replace(
+        settings,
+        skill=resolve_web_skill_config(settings.skill),
+    )
     return await astream_question(
         question,
         on_event,
+        settings=settings,
         thread_id=thread_id,
         skill_overrides=skill_overrides,
     )
