@@ -19,7 +19,7 @@ MAX_CHARS_LIMIT = 50_000
 MAX_RESPONSE_BYTES = 2_000_000
 MAX_REDIRECTS = 5
 ALLOWED_CONTENT_TYPES = {"text/html", "text/plain", "application/xhtml+xml"}
-USER_AGENT = "deepresearch-demo/0.1 (+local research agent)"
+USER_AGENT = "deepresearchagent/0.1 (+local research agent)"
 PROXY_FAKE_IP_NETWORK = ipaddress.ip_network("198.18.0.0/15")
 
 

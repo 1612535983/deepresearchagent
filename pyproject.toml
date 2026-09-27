@@ -1,5 +1,5 @@
 [project]
-name = "deepresearch-demo"
+name = "deepresearchagent"
 version = "0.1.0"
 description = "A recoverable and auditable deep-research agent built with LangGraph"
 readme = "README.md"
@@ -36,8 +36,8 @@ web = [
 deepresearch = "deepresearch.cli:main"
 
 [project.urls]
-Repository = "https://github.com/1612535983/deepreseach-learing"
-Issues = "https://github.com/1612535983/deepreseach-learing/issues"
+Repository = "https://github.com/1612535983/deepresearchagent"
+Issues = "https://github.com/1612535983/deepresearchagent/issues"
 
 [build-system]
 requires = ["setuptools>=68"]

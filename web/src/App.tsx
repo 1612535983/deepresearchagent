@@ -207,7 +207,7 @@ function Shell({ children }: { children: React.ReactNode }) {
       </header>
       {children}
       <footer>
-        <span>DeepResearch Agent</span>
+        <span>DeepResearchAgent</span>
         <span>可恢复 · 可审计 · 有边界</span>
       </footer>
     </div>

@@ -1,6 +1,6 @@
 # Acknowledgments
 
-DeepResearch Agent is an independent, learning-oriented engineering project.
+DeepResearchAgent is an independent, learning-oriented engineering project.
 Its project-specific state model, tools, middleware composition, P1/P4/P5
 governance pipeline, and Markdown/BM25 memory implementation live in this
 repository and are covered by its tests.

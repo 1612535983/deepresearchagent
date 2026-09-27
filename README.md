@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="docs/assets/readme-hero.svg" alt="DeepResearch Agent: Plan, Search, Evidence, Report and Memory" width="100%">
+<img src="docs/assets/readme-hero.svg" alt="DeepResearchAgent: Plan, Search, Evidence, Report and Memory" width="100%">
 
-# 🔬 DeepResearch Agent
+# 🔬 DeepResearchAgent
 
 **一个可运行、可恢复、可审计的深度研究智能体，也是一份面向 AI Agent 爱好者的工程学习参考。**
 
 从自然语言问题出发，自动规划研究、搜索并读取网页、整理证据，最终生成带来源的 Markdown 报告。既可以通过 CLI 使用，也可以在 Web 工作台中实时观察研究过程。
 
-[![Tests](https://github.com/1612535983/deepreseach-learing/actions/workflows/tests.yml/badge.svg)](https://github.com/1612535983/deepreseach-learing/actions/workflows/tests.yml)
+[![Tests](https://github.com/1612535983/deepresearchagent/actions/workflows/tests.yml/badge.svg)](https://github.com/1612535983/deepresearchagent/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-Stateful_Agent-1C3C3C)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -21,7 +21,7 @@
 
 ## 项目定位
 
-DeepResearch Agent 是一个基于 LangGraph 构建的深度研究 Agent。
+DeepResearchAgent 是一个基于 LangGraph 构建的深度研究 Agent。
 
 它希望同时回答两个问题：
 
@@ -63,8 +63,8 @@ DeepResearch Agent 是一个基于 LangGraph 构建的深度研究 Agent。
 项目要求 Python 3.12+，推荐使用 [`uv`](https://docs.astral.sh/uv/) 管理环境。
 
 ```bash
-git clone https://github.com/1612535983/deepreseach-learing.git
-cd deepreseach-learing
+git clone https://github.com/1612535983/deepresearchagent.git
+cd deepresearchagent
 uv sync --extra dev --extra web
 ```
 

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
-  <title id="title">DeepResearch Agent</title>
+  <title id="title">DeepResearchAgent</title>
   <desc id="desc">A recoverable and auditable research agent that plans, searches, collects evidence, and writes reports.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">

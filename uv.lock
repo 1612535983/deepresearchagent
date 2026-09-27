@@ -215,7 +215,7 @@ wheels = [
 ]
 
 [[package]]
-name = "deepresearch-demo"
+name = "deepresearchagent"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

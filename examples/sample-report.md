@@ -1,6 +1,6 @@
 # 示例报告：LangChain Agent 如何工作？
 
-> 这是一个经过压缩的展示样例，用来说明 DeepResearch Agent 的输出结构。
+> 这是一个经过压缩的展示样例，用来说明 DeepResearchAgent 的输出结构。
 > 实际运行时，报告内容、来源和长度由研究问题及模型决定。
 
 ## 结论摘要
